@@ -23,7 +23,7 @@ rlate  = 2.350e+09;
 
 %********************* input factors ************************************
 
-% Tini = 1337.8; % 0.9                   % modify here before running
+Tini = 1337.8; % 0.9                   % modify here before running
 % Tini = 1424.5; % 0.7
 % Tini = 1511.2; % 0.5
 % Tini = 1597.9; % 0.3
