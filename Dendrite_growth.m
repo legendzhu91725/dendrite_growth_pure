@@ -16,20 +16,20 @@ al = dx*(nd-1);
 
 %************************ material parameters  ***************************
 
-Tm = 1728.0;       
+Tm = 1728.0;                    
 cndct = 84.01;   
 speht = 5.42e+06;   
 rlate  = 2.350e+09; 
 
 %********************* input factors ************************************
 
-Tini = 1337.8; % 0.9
+% Tini = 1337.8; % 0.9                   % modify here before running
 % Tini = 1424.5; % 0.7
 % Tini = 1511.2; % 0.5
 % Tini = 1597.9; % 0.3
 
-%astre = 0.05;   
-astre = 0.015;
+%astre = 0.05;                          % modify here before running
+%astre = 0.015;
 %astre = 0.005;
 
 %********************** initial configuration ****************************
@@ -82,7 +82,7 @@ for n = 1: instep
 for i = 2:nd-1
 for j = 2:nd-1
     
-if (i == nd-1)phi(i+1,j) = phi(i-1,j); end   %Neumann boundary conditions
+if (i == nd-1)phi(i+1,j) = phi(i-1,j); end    %Neumann boundary conditions
 if (i == 2) phi(i-1,j) = phi(i+1,j); end
 if (j == nd-1)phi(i,j+1) = phi(i,j-1); end
 if (j == 2) phi(i,j+1) = phi(i,j-1); end
@@ -133,6 +133,6 @@ end
 mesh(phi);
 view(2);
 end
-filename = sprintf('uc9_as015_3_%d.jpg',m);
+filename = sprintf('input_factors_%d.jpg',m);          %modify here before running
 saveas(gcf, filename,'png');
 end
