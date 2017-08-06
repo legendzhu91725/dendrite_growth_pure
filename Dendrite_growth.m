@@ -32,7 +32,7 @@ Tini = 1337.8; % 0.9                   % modify here before running
 %astre = 0.015;
 %astre = 0.005;
 
-%********************** initial configuration ****************************
+%********************** initial configuration **************************
 
 phi = zeros(nd,nd);
 T = zeros(nd,nd);
