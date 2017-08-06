@@ -1,0 +1,2 @@
+mkdir Phase_field
+mkdir Temperature_field
